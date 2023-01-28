@@ -1,7 +1,19 @@
 body {
     margin: 0;
 }
+
 h1 {
     text-align: center; 
     font-size: 18px; 
+    margin-left: 50px;
+}
+
+.text {
+    text-align: center;
+
+}
+
+.sector {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
