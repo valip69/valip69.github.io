@@ -13,7 +13,7 @@
     }
 
     .container {
-        padding: 0 20px;
+        padding: 20px;
         background: gold;
     }
 
@@ -41,14 +41,40 @@
 
     img {
         width: 100%;
-        height: 250px;
         margin-top: 5px;
+    }
+
+    p {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    @media (max-width: 678px) {
+        .sector {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+
+    }
+
+    @media (max-width: 440px) {
+        .sector {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 20px;
+        }
+
+        h1 {
+            text-align: justify;
+        }
+
     }
 </style>
 
 <body>
     <div class="container">
-        <h3>Валерий Свиридов</h2>
+        <h3>Валерий Свиридов (email: valip69@mail.ru)</h2>
             <h2 class="text">Портфолио</h2>
             <h1>Некоторые проекты сделанные мной</h1>
             <div class="sector">
@@ -67,15 +93,16 @@
                 </div>
                 <div class="card">
                     <a href="./chat-app/index.html">Chat app</a>
-                    <img src="./chat-app/images/2023-01-28_18-52-33.png" alt="">
+                    <img src="./chat-app/images/2023-01-29_14-26-06.png" alt="">
                 </div>
                 <div class="card">
                     <a href="./chat-app/chat.html">Chat app (chat)</a>
                     <img src="./chat-app/images/2023-01-28_18-53-35.png" alt="">
                 </div>
             </div>
-            <p>Портфолио Валерия Свиридова</p>
-            <a href="/valip69.githab.io">httl//valip69.githab.io</a>
+            <p>Портфолио Валерия Свиридова:
+                <a href="./index.html">httl//valip69</a>
+            </p>
     </div>
 </body>
 
