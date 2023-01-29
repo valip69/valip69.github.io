@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./fonts.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document6</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+
+    html {
+        font-family: "Montserrat";
+        font-style: normal;
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+
+        width: 100%;
+        height: 100%;
+        margin: 0;
+
+    }
+
+    .container {
+        height: 100%;
+        background: url(Custom.png) center/cover no-repeat;
+
+
+
+    }
+
+
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 49px 162px 0 162px;
+        color: #ffff;
+
+    }
+
+    .menu_icon {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .menu_icon_first {
+        font-weight: 800;
+        font-size: 48px;
+
+
+
+    }
+
+    .menu_icon span {
+        font-size: 23px;
+        font-weight: 400;
+
+    }
+
+    .menu_items {
+        display: flex;
+        font-size: 23px;
+        gap: 50px;
+        font-weight: 400;
+        padding-left: 250px;
+
+    }
+
+    @media (max-width: 1128px) {
+        .menu_icon_first {
+            font-size: 30px;
+        }
+
+        .menu_icon span {
+            font-size: 15px;
+        }
+
+
+
+    }
+
+    @media (max-width: 1128px) {
+        .menu_icon_first {
+            font-size: 30px;
+        }
+
+        .menu_icon span {
+            font-size: 15px;
+        }
+
+    }
+
+    @media (max-width: 735px) {
+        .menu_items {
+            display: none;
+        }
+
+    }
+
+    .menu_items a {
+        text-decoration: none;
+        color: #ffff;
+    }
+
+
+    .menu_button button {
+        font-size: 23px;
+        border: 2px solid rgba(255, 255, 255, 1);
+        background-color: transparent;
+        border-radius: 50px;
+        max-width: 120px;
+        max-height: 50px;
+        color: #ffff;
+        font-weight: 400;
+
+
+    }
+
+    @media (max-width: 1128px) {
+
+        .menu_button button {
+            font-size: 15px;
+        }
+
+    }
+
+    .title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 160px;
+        gap: 60px;
+        color: #ffff;
+
+
+    }
+
+    .title_text {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 110px;
+
+
+
+    }
+
+    .subtitle {
+
+        font-weight: 600;
+        font-size: 48px;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    .title_text_end {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 110px;
+    }
+
+    @media (max-width: 1284px) {
+        .title_text {
+            font-size: 100px;
+        }
+
+        .subtitle {
+            font-size: 40px;
+        }
+
+        .title_text_end {
+            font-size: 100px;
+        }
+    }
+
+    @media (max-width: 1128px) {
+        .title_text {
+            font-size: 80px;
+        }
+
+        .subtitle {
+            font-size: 32px;
+        }
+
+        .title_text_end {
+            font-size: 80px;
+        }
+    }
+
+    @media (max-width: 964px) {
+        .title {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    }
+
+    .icon {
+        display: flex;
+        flex-direction: column;
+        gap: 59px;
+        width: 27px;
+        margin-left: 130px;
+
+
+
+    }
+
+    .icon_first {
+        background: #ffff;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    @media (max-width: 964px) {
+        .icon {
+            display: flex;
+            flex-direction: row;
+
+        }
+    }
+</style>
+
+<body>
+    <div class="container">
+
+        <div class="menu">
+            <div class="menu_icon">
+                <div class="menu_icon_first">DHRUVA</div>
+                <span>ASTRONOMY CLUB</span>
+            </div>
+            <div class="menu_items">
+                <a href="">Discover</a>
+                <a href="">Quiz</a>
+                <a href="">About</a>
+            </div>
+            <div class="menu_button">
+                <button type="button">Sign Up</button>
+            </div>
+
+        </div>
+
+        <div class="title">
+            <div class="title_text"> Learn</div>
+            <div class="subtitle">Space<br>Stars<br>Planets<br>Galaxies<br>Conspiracies<br>Life.</div>
+            <div class="title_text_end">and Cosmos</div>
+        </div>
+
+
+        <div class="icon">
+            <div class="icon_first"><img src="Vector.png"></div>
+            <img src="white background.png">
+            <img src="Group.png">
+
+        </div>
+    </div>
+
+</body>
