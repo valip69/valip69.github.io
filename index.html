@@ -12,123 +12,6 @@
         margin: 0;
     }
 
-    .carousel-wrapper {
-        height: 400px;
-        position: relative;
-        width: 800px;
-        margin: 0 auto;
-    }
-
-    .carousel-item {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        padding: 25px 50px;
-        opacity: 0;
-        transition: all 0.5s ease-in-out;
-    }
-
-    .foto {
-        position: absolute;
-        top: -50px;
-        left: 0;
-
-
-    }
-
-    .arrow {
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 12px;
-    }
-
-    .arrow-prev {
-        left: -30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(135deg);
-    }
-
-    .arrow-next {
-        right: -30px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%) rotate(-45deg);
-    }
-
-    .light {
-        color: white;
-    }
-
-    @media (max-width: 480px) {
-
-        .arrow,
-        .light .arrow {
-            background-size: 10px;
-            background-position: 10px 50%;
-        }
-    }
-
-
-    /*Select every element*/
-    [id^="item"] {
-        display: none;
-    }
-
-    .item-1 {
-        z-index: 2;
-        opacity: 1;
-        background: url('./music-box/images/2023-01-28_18-48-51.png');
-        background-size: cover;
-    }
-
-    .item-2 {
-        background: url('./music-box/images/2023-01-28_18-51-10.png');
-        background-size: cover;
-    }
-
-    .item-3 {
-        background: url('./cognitive-biases/images/2023-01-28_18-51-44.png');
-        background-size: cover;
-    }
-
-    .item-4 {
-        background: url('./chat-app/images/2023-01-29_14-26-06.png');
-        background-size: cover;
-    }
-
-    .item-5 {
-        background: url('./house/images/2023-01-29_15-44-58.png');
-        background-size: cover;
-    }
-
-    .item-6 {
-        background: url('./your coffee/images/2023-01-29_15-16-03.png');
-        background-size: cover;
-    }
-
-    *:target~.item-1 {
-        opacity: 0;
-    }
-
-    #item-1:target~.item-1 {
-        opacity: 1;
-    }
-
-    #item-2:target~.item-2,
-    #item-3:target~.item-3,
-    #item-4:target~.item-4,
-    #item-5:target~.item-5,
-    #item-6:target~.item-6 {
-        z-index: 3;
-        opacity: 1;
-    }
-
-
-
     .container {
         padding: 20px;
         background: #eaeef4;
@@ -137,13 +20,6 @@
     a {
         font-size: 20px;
 
-    }
-
-    h1 {
-        text-align: center;
-        font-size: 18px;
-        margin-left: 50px;
-        margin-bottom: 50px;
     }
 
     .text {
@@ -184,57 +60,12 @@
             grid-gap: 20px;
         }
 
-        h1 {
-            text-align: justify;
-        }
-
     }
 </style>
 
 <body>
     <div class="container">
         <h2 class="text">Портфолио</h2>
-        <h1>Некоторые проекты сделанные мной</h1>
-        <div class="carousel-wrapper">
-            <span id="item-1"></span>
-            <span id="item-2"></span>
-            <span id="item-3"></span>
-            <span id="item-4"></span>
-            <span id="item-5"></span>
-            <span id="item-6"></span>
-            <div class="carousel-item item-1">
-                <p class="foto"><a href="./music-box/index.html">Music box</a> (html, css)</p>
-                <a class="arrow arrow-prev" href="#item-6"></a>
-                <a class="arrow arrow-next" href="#item-2"></a>
-            </div>
-
-            <div class="carousel-item item-2">
-                <p class="foto"><a href="./music-box/artist.html">Music box (artist)</a> (html, css)</p>
-                <a class="arrow arrow-prev" href="#item-1"></a>
-                <a class="arrow arrow-next" href="#item-3"></a>
-            </div>
-
-            <div class="carousel-item item-3">
-                <p class="foto"><a href="./cognitive-biases/index.html">Cognitive biases</a> (html, css, scss)</p>
-                <a class="arrow arrow-prev" href="#item-2"></a>
-                <a class="arrow arrow-next" href="#item-4"></a>
-            </div>
-            <div class="carousel-item item-4">
-                <p class="foto"><a href="./chat-app/index.html">Chat app</a> (html, bootstrap 5, pug, gulp)</p>
-                <a class="arrow arrow-prev" href="#item-3"></a>
-                <a class="arrow arrow-next" href="#item-5"></a>
-            </div>
-            <div class="carousel-item item-5">
-                <p class="foto"><a href="./house/index12.html">Project house</a> (html, css)</p>
-                <a class="arrow arrow-prev" href="#item-4"></a>
-                <a class="arrow arrow-next" href="#item-6"></a>
-            </div>
-            <div class="carousel-item item-6">
-                <p class="foto"><a href="./your coffee/index18.html">Your cofee</a> (html, css)</p>
-                <a class="arrow arrow-prev" href="#item-5"></a>
-                <a class="arrow arrow-next" href="#item-1"></a>
-            </div>
-        </div>
         <div class="sector">
             <div class="card">
                 <p><a href="./music-box/index.html">Music box</a> (html, css)</p>
